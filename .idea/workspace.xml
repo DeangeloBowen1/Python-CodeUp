@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="47bc3091-01d4-4f8f-ba9a-28f9511e3cf4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Python Exercises/python_intro_exercises.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Exercises/python_introduction_exercises.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Exercises/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Exercises/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jupiter Exercises/my_first_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Jupiter Exercises/my_first_notebook.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Jupyter" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="Python.python_intro_exercises">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -148,6 +153,7 @@
       <workItem from="1649359248591" duration="675000" />
       <workItem from="1649359960267" duration="398000" />
       <workItem from="1649360361325" duration="157000" />
+      <workItem from="1649360727613" duration="924000" />
     </task>
     <servers />
   </component>
