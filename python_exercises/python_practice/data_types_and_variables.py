@@ -47,4 +47,50 @@ and the class schedule does not conflict with her current schedule.
 """
 
 
+class_not_full = True
+schedule_not_full = False
+student_can_enroll = class_not_full and schedule_not_full
+print(f'Can the student enroll? \n {student_can_enroll}')
+
+"""
+A product offer can be applied only if people buys more than 2 items, and the offer has not expired.
+ Premium members do not need to buy a specific amount of products.
+"""
+
+is_premium_member = True
+more_than_two_items = False
+
+offer_not_expired = True
+discount_valid = offer_not_expired and (is_premium_member or more_than_two_items)
+print(discount_valid)
+
+"""
+Create a variable that holds a boolean value for each of the following conditions:
+
+the password must be at least 5 characters
+the username must be no more than 20 characters
+the password must not be the same as the username
+bonus neither the username or password can start or end with whitespace
+"""
+
+username = 'codeup'
+password = 'notastrongpassword'
+
+password_is_long_enough = len(password) >= 5
+username_is_short_enough = len(username) <= 20
+username_and_password_are_different = username != password
+username_has_spaces = username != username.strip()
+password_has_spaces = password != password.strip()
+
+username_good = username_is_short_enough and username_and_password_are_different and (not username_has_spaces)
+password_good = password_is_long_enough and username_and_password_are_different and (not password_has_spaces)
+
+valid_credentials = username_good and password_good
+
+print('Username good?')
+print(username_good)
+print('Password good?')
+print(password_good)
+print('credentials valid?')
+print(valid_credentials)
 
