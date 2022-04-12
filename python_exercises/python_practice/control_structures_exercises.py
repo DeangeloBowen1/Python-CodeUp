@@ -1,5 +1,6 @@
 # Conditional Basics
 # A. prompt the user for a day of the week, print out whether the day is Monday or not
+import sys
 
 day = input("Enter the day: ")
 if day.lower() == 'monday':
@@ -155,23 +156,32 @@ for n in range(1, 101):
 # Ask if the user wants to continue.
 # Assume that the user will enter valid data.
 # Only continue if the user agrees to.
+table = True
 
-powers_table = True
-
-while powers_table:
-    number = int(input("Enter an integer: "))
-    print("\n")
-    print("Here is your table!")
-    print("\n")
-    print("number | squared | cubed")
-    for i in range(1, number + 1):
-        first = str(i)
-        square = str(i ** 2)
-        cube = str(i ** 3)
-        print(first + " " * (7 - len(first)) + "| ", end="")
-        print(square + " " * (8 - len(square)) + "| ", end="")
-        print(cube)
-    powers_table = input("Would you like to continue? (Y/N)") == "Y"
+while table:
+    try:
+        number = int(input("Press any key to open menu, or enter an integer: "))
+        print("\n")
+        print("Here is your table!")
+        print("\n")
+        print("number | squared | cubed")
+        for i in range(1, number + 1):
+            first = str(i)
+            square = str(i ** 2)
+            cube = str(i ** 3)
+            print(first + " " * (7 - len(first)) + "| ", end="")
+            print(square + " " * (8 - len(square)) + "| ", end="")
+            print(cube)
+    except ValueError:
+        print("You did not enter an integer.")
+        print(" ")
+        cont = input("Would you like to continue? (Y/N)").upper()
+        if cont == 'Y':
+            continue
+        elif cont == 'N':
+            table = False
+        else:
+            continue
 
 """--------------------------------------------------------------------------------------------------------------------
 Question 5: 
@@ -249,4 +259,3 @@ if matches == []:
 else:
     print(f'I have the following titles in the selected genre: \n')
     [print(match) for match in matches]
-
